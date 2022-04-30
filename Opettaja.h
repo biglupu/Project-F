@@ -9,6 +9,6 @@ public:
 
 private:
 	string mKoulutusala;
-	Koulu mKoulunNimi;
+	
 };
 

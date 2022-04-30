@@ -5,7 +5,7 @@
 #include "Osoite.h"
 #include "Opiskelija.h"
 #include "Opettaja.h"
-#include "Koulu.h"
+//#include "Koulu.h"
 
 
 
@@ -20,13 +20,29 @@ int main() {
 
 
 	//Polymorfismi. Olio voi samanaikaisesti olla monen luokan instanssi. "Opettaja" on myös ihminen :D
+	// 
 	//C++ oletuksena "staattinen sidonta". Metodin toteutus valitaan osoittimen tyypin perusteella.
 	//Muissa oliokielissä Java, C#, Swift oletuksena ja ainoana vaihtoehtona on ns. "dynaaminen sidonta" eli 
 	//ajonaikaisesti katsotaan, minkä luokan instanssi on kantaluokkaosoittimen takana, ja valitaan metodi sen mukaan
 
 
-	Koulu tamk("Tamk");
-	tamk.lisaaOpiskelija();
+	vector<Opettaja*>opettajat;
+	opettajat.push_back(new Opettaja("Kalle", 25, "Tietotekniikka "));
+	opettajat.push_back(new Opettaja("Kille", 27, "ATK "));
+
+	for (Opettaja* h : opettajat) 
+	{
+	h->tulostaTiedot();
+	}
+
+	for (Opettaja* h : opettajat) 
+	{
+	delete h;
+	}
+
+
+	//Koulu tamk("Tamk");
+	//tamk.lisaaOpiskelija();
 
 
 

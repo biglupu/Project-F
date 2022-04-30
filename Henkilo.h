@@ -19,11 +19,7 @@ public:
 	Henkilo(const string& aNimi, int aIka, const Osoite& aOsoite);
 	Henkilo(string aNimi, int aIka, Osoite aOsoite);
 
-	//Henkilo(const string& aNimi, int aIka, const Koulu& aKoulunNimi);
-	//
-	//Henkilo(const string& aNimi, int aIka, Koulu aKoulunNimi);
 
-	Henkilo(string aNimi, int aIka, Koulu aKoulunNimi);
 
 
 	//K‰‰nt‰j‰ tekee oletuksena kopiorakentajan jokaiselle luokalle, esmes alla
@@ -57,3 +53,8 @@ private:
 	Osoite osoite;
 
 };
+//Henkilo(const string& aNimi, int aIka, const Koulu& aKoulunNimi);
+//
+//Henkilo(const string& aNimi, int aIka, Koulu aKoulunNimi);
+
+/*Henkilo(string aNimi, int aIka, Koulu aKoulunNimi);*/

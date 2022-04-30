@@ -22,7 +22,8 @@ private:
 	string mOpNro = "xxxxxxxx";
 	int mOpintopisteet = 0;
 	vector<string> mKurssit;
-	Koulu mKoulunNimi;
+	
 };
 
 
+/*Koulu mKoulunNimi;*/
